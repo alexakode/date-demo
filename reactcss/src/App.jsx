@@ -1,16 +1,45 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import styles from "./styles/Greeting.module.css";
-import Greeting from "./components/Greeting.jsx";
+import {
+  Box,
+  Container,
+  Card,
+  CardContent,
+  Typography,
+  Button,
+  CssBaseline,
+  ThemeProvider,
+  createTheme,
+} from "@mui/material";
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  const theme = createTheme({ shape: { borderRadius: 16 } });
   return (
     <>
-      <h1>Hello, welcome to our website!</h1>
+      <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <Box>
+          <Container>
+            <Card>
+              <CardContent>
+                <h1>Hello, welcome to our website!</h1>
+              </CardContent>
+            </Card>
+            <Box component="section" sx={{ my: 4 }}>
+              <Typography variant="h4" component="h2" gutterBottom>
+                About Us
+              </Typography>
+              <Typography variant="body1">
+                We are a company dedicated to providing the best services to our
+                customers. Our team is passionate about delivering high-quality
+                solutions tailored to your needs.
+              </Typography>
+              <Button variant="contained" color="primary">
+                Learn More
+              </Button>
+            </Box>
+          </Container>
+        </Box>
+      </ThemeProvider>
     </>
   );
 }
