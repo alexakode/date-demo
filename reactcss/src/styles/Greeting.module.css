@@ -1,4 +1,4 @@
-@import "tailwindcss;
+@import "tailwindcss";
 .card {
   @apply border border-gray-300 rounded-lg p-4 my-4;
 }
