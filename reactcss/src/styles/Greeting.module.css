@@ -1,0 +1,17 @@
+@import "tailwindcss;
+.card {
+  @apply border border-gray-300 rounded-lg p-4 my-4;
+}
+.box {
+  color: #2c3e50;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  border: 1px solid #f80000;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  background-color: #f9f9f9;
+}
+h1 {
+  font-size: 2.5em;
+}
