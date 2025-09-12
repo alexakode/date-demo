@@ -9,4 +9,4 @@ export default function Menu({ retter }) {
     </div>
   );
 }
-console.log("Menu component rendered");
+// console.log("Menu component rendered");
